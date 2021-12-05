@@ -1,0 +1,31 @@
+.cake:hover{
+background-color: rgba(255, 219, 225, 0.897);
+border: 1px solid  rgb(240, 180, 190);
+
+
+}
+.cake{
+    margin-top: 1rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.text{
+    width:6rem;
+}
+.textt{
+    width:6rem;
+}
+.text:hover{
+font-weight: 800;}
+.cake-btn{
+ /* background-color: rgb(223, 221, 221); */
+    border: none;
+    width: 10rem;
+    
+}
