@@ -1,6 +1,6 @@
-import { Grid, Paper, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import * as React from 'react';
-import CakeBuy from '../CakeBuy/CakeBuy';
+
 import './CakeBox.css'
 
 
