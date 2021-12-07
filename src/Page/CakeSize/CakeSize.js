@@ -14,7 +14,7 @@ import Footer from '../Footer/Footer';
 
 const cakeSize = [
     {
-        id: 1,
+        id: 11,
         img: "https://clipartbarn.com/wp-content/uploads/2017/09/Birthday-cake-clipart-2.jpeg",
         size: 6,
         people: "4 - 6",
@@ -25,7 +25,7 @@ const cakeSize = [
 
     },
     {
-        id: 2,
+        id: 22,
         img: "https://clipartbarn.com/wp-content/uploads/2017/09/Birthday-cake-clipart-2.jpeg",
         size: 8,
         people: "10 - 12",
@@ -35,7 +35,7 @@ const cakeSize = [
 
     },
     {
-        id: 3,
+        id: 33,
         img: "https://clipartbarn.com/wp-content/uploads/2017/09/Birthday-cake-clipart-2.jpeg",
         size: 9,
         people: "12 - 15",
@@ -46,7 +46,7 @@ const cakeSize = [
 
     },
     {
-        id: 4,
+        id: 44,
         img: "https://clipartbarn.com/wp-content/uploads/2017/09/Birthday-cake-clipart-2.jpeg",
         size: 10,
         people: " 18 - 20",
@@ -57,7 +57,7 @@ const cakeSize = [
 
     },
     {
-        id: 5,
+        id: 55,
         img: "https://clipartbarn.com/wp-content/uploads/2017/09/Birthday-cake-clipart-2.jpeg",
         size: "13 - 18",
         people: "40 - 50",
@@ -73,31 +73,31 @@ const cakeSize = [
 const cakeDeco = [
 
     {
-        id: 11,
+        id: 1,
         img: `${d}`,
         name: "flower",
         count: 0
     },
     {
-        id: 12,
+        id: 2,
         img: `${dd}`,
         name: "Heart",
         count: 0
     },
     {
-        id: 13,
+        id: 3,
         img: `${ddd}`,
         name: "Star",
         count: 0
     },
     {
-        id: 14,
+        id: 4,
         img: `${dddd}`,
         name: "Bird",
         count: 0
     },
 ]
-
+let array = []
 const CakeSize = () => {
     const [cakeDecoState, setCakeDecoState] = useState([]);
 
@@ -111,6 +111,7 @@ const CakeSize = () => {
     useEffect(() => {
         setCakeDecoState(cakeDeco);
     }, [])
+
     // console.log(cakeDecoState);
     return (
         <div>
@@ -128,6 +129,7 @@ const CakeSize = () => {
                             key={cake.id}
                             cake={cake}
                             handleClick={handleClick}
+
 
                         ></CakeBox>)
                     }
@@ -148,6 +150,7 @@ const CakeSize = () => {
                         id={cakeDecor.id}
                         cakeDecor={cakeDecor}
                         cakes={cakes}
+                        array={array}
 
 
                     ></DecoBox>)
@@ -158,6 +161,11 @@ const CakeSize = () => {
                 >
 
                 </DecoBox> */}
+                {/* <DecoBox
+                    cakeDecoState={cakeDecoState}
+                    cakes={cakes}
+                ></DecoBox> */}
+
 
             </Grid>
 

@@ -6,7 +6,7 @@ export const DecoContext = createContext();
 function App() {
   const [dropDownCount, setDropDownCount] = useState([]);
   const [decoRow, setDecoRow] = useState([]);
-  console.log(decoRow);
+  // console.log(decoRow);
   return (
     <DecoContext.Provider value={{
       dropDownProp: [dropDownCount, setDropDownCount],

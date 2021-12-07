@@ -5,12 +5,12 @@ const Footer = ({ cakes }) => {
     const { decoration } = cakes;
     return (
         <div>
-            <Container style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '3rem' }}>
+            <Container style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <div>
                     <h3>Total:</h3>
                 </div>
                 <div>
-                    <h5 style={{ marginRight: '10rem' }}>0/{decoration}</h5>
+                    <h5 style={{ marginRight: '2rem' }}>0/{decoration}</h5>
 
                 </div>
             </Container>
